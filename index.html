@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 200dvh;
+    background-color: rgb(255, 255, 255);
+}
+h2{
+    text-align: center;
+}
+.imgC{
+    width: 100%;
+    height: 16em;
+    display: flex;
+    justify-content: center;
+}
+.firstSection, .tSection{
+    width: 100%;
+    height: 70dvh;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+ul{
+    width: 100%;
+    height: 20em;
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px ;
+}
+
+.fA{
+    width: 16em;
+    height: 2.8em;
+    background-color:#aa2517;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: all ease-in .1s;
+    border-radius: 6px;
+
+
+    &:hover{
+        background-color:#e0492f;
+        transform: scale(1.04);
+
+    }
+}
+.thSection{
+    width: 100%;
+    height: 100dvh;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+a{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    width: 18em;
+    height: 14em;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all ease-in .1s;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: rgb(188, 186, 186);
+        transform: scale(1.04);
+
+    }
+
+    
+    & img{
+        width: 8em;
+        height: auto;
+    }
+}
+p{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Crear la animación de nieve */
+.snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.snow span {
+    position: absolute;
+    top: -10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: fall 10s linear infinite;
+}
+
+/* Animación de caída */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+    </style>
+    <title>LP</title>
+</head>
+
+<body>
+    <section class="firstSection">
+        <h2>Auditorias🎄</h2>
+        <ul>
+            <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSeKdtvbAGrzGbTdgL9V6Hhx0oJYFbpV0MguOx7LDqMrS4Qurw/viewform" target="_blank">Retornos (Transferencias)</a></li>
+            <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSfdmt85RnYGle2yvGG0HempEsBa1bQA2l0Xe9W0z6YSv2Uqww/viewform?usp=send_form" target="_blank">Registro de Retiros Cortinas</a></li>
+            <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSddCDtEK59C82SEDgXVqy7zqUAl4-7RAHXtLDfY9aNdzyJiZA/viewform" target="_blank">Resgistro de Rezagos, Donación y Destrucción</a></li>
+            <li> <a class="fA" href="https://docs.google.com/spreadsheets/d/1NkhUWygbTSwudxf5o04mlscaWh3YwSdHXcKd1e0hHr4/copy" target="_blank">Auditoria de TMWH con incidencias</a></li>
+            <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSdXbCGFtsmBE0vU_WlG7Q2zIBlbmdhcLuDrgHrE-Bf008uAPQ/viewform" target="_blank">Registro de incidencias MELI´s</a></li>
+            <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSdI0TRGlQrxWBSfJanhbMNKS46pMzRjVk7b685b8tae1VgE6g/viewform" target="_blank">Reporte de Auditorias</a></li>
+            <li> <a class="fA" href="https://docs.google.com/spreadsheets/d/1h6AKpGyvn0Lwpvpb4Z5XWMibt_U0O47lnYuSXCKoW90/copy" target="_blank">Auditoria a HU's Transfer MWH</a></li>
+        </ul>
+    </section>
+    <section class="tSection">
+        <h2>Formatos para incidencias📧</h2>
+        <ul>
+            <li><a class="fA" href="https://otonielvz.github.io/Responsables/" target="_blank">Inbound Audit</a></li>
+            <li><a class="fA" href="https://otonielvz.github.io/Stock-Audit/" target="_blank">Stock Audit Verdadero</a></li>
+            <li><a class="fA" href="https://otonielvz.github.io/Stock-Audit-Falso/" target="_blank">Stock Audit Falso</a> </li>
+            <li> <a class="fA" href="https://otonielvz.github.io/Excedente-Put-Away/" target="_blank">Excedente Put Away</a> </li>
+            <li> <a class="fA" href="https://otonielvz.github.io/Faltante/" target="_blank">Faltante Put Away</a> </li>
+            <li> <a class="fA" href="https://otonielvz.github.io/Rezagos/" target="_blank">Auditoria Rezagos</a> </li>
+            <li> <a class="fA" href="https://otonielvz.github.io/TSVH/" target="_blank">TS Faltante/Sobrante MWH</a> </li>
+        </ul>
+    </section>
+    <section class="thSection">
+        <h2>Otros Formatos💻</h2>
+        <div class="container">
+            <span>
+                <a href="https://tableau.adminml.com/#/site/Shipping/views/TableroSteercoEstimado/FPP/72c78747-8f87-47c7-9746-dac1472aff2a/FPPNL01Steerco?:iid=1" target="_blank"><img src="https://teorema-rd.com/wp-content/uploads/2024/04/Tableau-Emblem.png" alt="">
+                <p>Tableau  - FPP</p></a>
+            </span>
+            <span>
+                <a href="https://lookerstudio.google.com/reporting/0627a8d1-40a9-434f-ae10-eb5141a113e4?s=oa418fQtCDc" target="_blank"><img src="https://i.pinimg.com/originals/0b/92/c1/0b92c1ba5ae239c314ba2ec1dab936ec.png" alt="">
+                <p>Dashboard Pending Analysis</p></a>
+            </span>
+            <span>
+                <a href="https://lookerstudio.google.com/reporting/f6bbf71e-350b-455b-90f3-df531a7aed2f?s=nnex8mmKe7w" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/16139/16139673.png?semt=ais_hybrid" alt="">
+                <p>Dashboard Auditorias LP Monterrey</p></a>
+            </span>
+            <span>
+               <a href="https://docs.google.com/spreadsheets/d/1pr7q49TSGeQkJ2Om02NDsqqaQbF7YGym85_LFesnSK0/edit?gid=91257630#gid=91257630" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2250/2250334.png" alt="">
+                <p>Registro de salida Rezagos, Donación y Destrucción</p></a>
+            </span>
+            <span>
+                <a href="https://lookerstudio.google.com/reporting/75071526-ecbe-4418-a4ad-a454fe28913b?s=tsVB-lj9oso" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/11856/11856163.png" alt="">
+                <p>Resguardo de productos HV</p></a>
+            </span>
+            <span>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdmt85RnYGle2yvGG0HempEsBa1bQA2l0Xe9W0z6YSv2Uqww/viewform" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3200/3200751.png" alt="">
+                <p>Registro, entrega de retiros</p></a>
+            </span> 
+
+        </div>
+        <h2>Templates Auditorias🔎</h2>
+        <div class="container">
+            <span>
+                <a href="https://docs.google.com/spreadsheets/d/1Uwqhd6114Peg3I0kVZTAMHaHZ_7VVvKm95_tnptmLkE/copy" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/4839/4839558.png" alt="">
+                <p>Template Auditoria Dirigida</p></a>
+            </span>
+            <span>
+                <a href="https://docs.google.com/spreadsheets/d/13_WcERcPK9fsx-DB0sAYMlaJRxtDBSc2m1KYiH40d8k/copy" target="_blank"><img src="https://cdn-icons-png.freepik.com/512/8993/8993841.png" alt="">
+                <p>Template Auditoria Rezagos</p></a>
+            </span>
+            <span>
+                <a href="https://app.safetyculture.com/logout?destination=v1&redirectRoute=%2Ftemplates%2Findex" target="_blank"><img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_8526d3b4a892aa133ebc855988f06976/safetyculture-2024-08-16.png" alt="">
+                <p>IAuditor</p></a>
+            </span>
+            <span>
+                <a href="https://docs.google.com/spreadsheets/d/1Wnb4qRGIWbiituZFTw0_Tm5tOplHOix_Zd-XtkkUjJU/copy" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/10930/10930991.png" alt="">
+                <p>Auditoria Missort</p></a>
+            </span>
+        </div>
+    </section>
+</body>
+<script>
+    // Función para crear la nieve
+    function createSnow() {
+        let snowContainer = document.createElement('div');
+        snowContainer.classList.add('snow');
+        document.body.appendChild(snowContainer);
+
+        // Crear varios copos de nieve
+        for (let i = 0; i < 100; i++) {
+            let snowFlake = document.createElement('span');
+            let size = Math.random() * 5 + 2; // Tamaño aleatorio de la nieve
+            let positionX = Math.random() * 100; // Posición aleatoria en el eje X
+            let animationDuration = Math.random() * 10 + 5; // Duración aleatoria de la animación
+
+            snowFlake.style.width = `${size}px`;
+            snowFlake.style.height = `${size}px`;
+            snowFlake.style.left = `${positionX}%`;
+            snowFlake.style.animationDuration = `${animationDuration}s`;
+            snowFlake.style.animationDelay = `${Math.random() * 5}s`;
+
+            snowContainer.appendChild(snowFlake);
+        }
+    }
+
+    window.onload = createSnow;
+</script>
+
+
+</html>
