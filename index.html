@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!--By: Otoniel PalaciosVz
+Create with Htmls,css and Js Vanilla-->
 <html lang="es">
 
 <head>
@@ -16,11 +18,13 @@
 }
 body{
     width: 100%;
-    height: 200dvh;
+    height: 240dvh;
     background-color: rgb(255, 255, 255);
 }
 h2{
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
 }
 .imgC{
     width: 100%;
@@ -31,20 +35,29 @@ h2{
 .firstSection, .tSection{
     width: 100%;
     height: 70dvh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     place-content: center;
     overflow: hidden;
 }
 
 ul{
-    width: 100%;
+    width: 38em;
     height: 20em;
-    display: grid;
     list-style: none;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 20px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+
 }
+
+
 
 .fA{
     width: 16em;
@@ -135,7 +148,39 @@ p{
     to {
         transform: translateY(100vh);
     }
+    
 }
+@media screen and (max-width: 655px) {
+    ul {
+        width:19em;
+        height: 48em;
+        padding: 20px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow: hidden;
+    }
+    .firstSection, .tSection{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+}
+h2{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    font-size: 17px;
+}
+}
+
 
 
     </style>
@@ -144,8 +189,8 @@ p{
 
 <body>
     <section class="firstSection">
-        <h2>Auditorias🎄</h2>
         <ul>
+            <h2>Auditorias🎄</h2>
             <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSeKdtvbAGrzGbTdgL9V6Hhx0oJYFbpV0MguOx7LDqMrS4Qurw/viewform" target="_blank">Retornos (Transferencias)</a></li>
             <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSfdmt85RnYGle2yvGG0HempEsBa1bQA2l0Xe9W0z6YSv2Uqww/viewform?usp=send_form" target="_blank">Registro de Retiros Cortinas</a></li>
             <li><a class="fA" href="https://docs.google.com/forms/d/e/1FAIpQLSddCDtEK59C82SEDgXVqy7zqUAl4-7RAHXtLDfY9aNdzyJiZA/viewform" target="_blank">Resgistro de Rezagos, Donación y Destrucción</a></li>
@@ -156,8 +201,8 @@ p{
         </ul>
     </section>
     <section class="tSection">
-        <h2>Formatos para incidencias📧</h2>
         <ul>
+            <h2>Formatos para incidencias📧</h2>
             <li><a class="fA" href="https://otonielvz.github.io/Responsables/" target="_blank">Inbound Audit</a></li>
             <li><a class="fA" href="https://otonielvz.github.io/Stock-Audit/" target="_blank">Stock Audit Verdadero</a></li>
             <li><a class="fA" href="https://otonielvz.github.io/Stock-Audit-Falso/" target="_blank">Stock Audit Falso</a> </li>
